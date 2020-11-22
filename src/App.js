@@ -34,8 +34,7 @@ class App extends React.Component {
         });
       } else {
         this.setState({ currentUser: userAuth });
-        if(this.unsubscribeFromSnapshot)
-        this.unsubscribeFromSnapshot();
+        if (this.unsubscribeFromSnapshot) this.unsubscribeFromSnapshot();
       }
     });
   }
